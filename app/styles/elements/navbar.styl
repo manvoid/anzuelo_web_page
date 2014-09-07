@@ -1,0 +1,39 @@
+logo_width = 100px
+logo_height = 90px
+item_count = 6
+item_width = 100px
+item_height = 27px
+item_margin = 2px
+list_width = (item_width + item_margin*2) * item_count + logo_width + item_margin*2
+
+.nav-container
+  pass()
+  margin-top 10px
+
+
+.nav-container ul
+  center()
+  padding 0
+  size list_width item_height
+
+.nav-container li
+  list-style-type none
+  float left
+  cursor pointer
+  margin item_margin
+
+.nav-container .nav-item
+  size item_width item_height
+  text-align center
+  background-color green
+  padding-top 5px
+  transition all 0.5s
+  border-radius 5px
+  b()
+  hover-darken()
+
+.nav-container .nav-logo
+  margin-top 15px
+  width logo_width
+  img
+    size logo_width logo_height
